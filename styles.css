@@ -18,6 +18,11 @@ body.dark {
     --description-color: #9dbbeecc;
     --cursor-color: #71a8ff;
 }
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
 
 
 body {
@@ -72,20 +77,26 @@ body.dark .myname {
 .top-links a:hover {
   background-color: rgba(0, 72, 255, 0.1);
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .top-links {
-    top: 15px;               /* Push it below the theme toggle */
-    right: 20px;
-    flex-direction: row; /* Stack vertically on small screens */
-    align-items: flex-end;
-    gap: 1px;
+    top: 18px;
+    right: 55px;
+    gap: 12px;
+    flex-direction: row;
   }
 
   .top-links a {
-    font-size: 0.85rem;
-    padding: 4px 10px;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  #theme-toggle {
+    font-size: 1.2rem;
+    top: 15px;
+    right: 15px;
   }
 }
+
 
 
 /* Optional dark mode styling */
@@ -279,33 +290,29 @@ header {
 }
 
 @media (max-width: 600px) {
-    .name-frame {
-        padding: 20px 30px;
-    }
+  .name-frame {
+    padding: 30px 15px;
+    width: 90%;
+    transform: rotate(-2deg);
+  }
 
-    .name-frame #typing-text {
-        font-size: 2rem;
-        white-space: normal;
-    }
+  #typing-text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    white-space: normal;
+  }
 
-    .hero {
-        padding: 80px 10px 30px;
-    }
+  .subheading {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
 
-    .hero h1 {
-        font-size: 2rem;
-        white-space: normal;
-        /* allow wrapping */
-        width: auto;
-    }
-
-    .subheading {
-        font-size: 1.1rem;
-    }
-
-    .description {
-        font-size: 0.95rem;
-    }
+  .description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
 }
 
 /* ABOUT + EXPERIENCE */
