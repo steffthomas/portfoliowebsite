@@ -657,3 +657,72 @@ body.dark .project-title {
   background-color: transparent;  /* no fill */
   font-weight: 500;
 }
+
+.timeline-section {
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.timeline-section h3 {
+  color: #2a3f91;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  border-left: 3px solid #b9b9b9;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -31px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: #2a3f91;
+  border-radius: 50%;
+  animation: pulseDot 2s infinite;
+}
+
+.timeline-item .content {
+  background: rgba(255, 255, 255, 0.15);  /* Light frosted look */
+  backdrop-filter: blur(10px);           /* Actual blur */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.95rem;
+  transition: transform 0.2s ease;
+}
+
+.timeline-item .content:hover {
+  transform: scale(1.02);
+}
+
+
+/* Animations */
+@keyframes pulseDot {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
