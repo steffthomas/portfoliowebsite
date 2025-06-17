@@ -827,7 +827,7 @@ body.dark .contact-container {
 .contact-form textarea {
     resize: vertical;
     color: #5b7dd9;
-    
+
 }
 
 .contact-form textarea {
@@ -947,51 +947,74 @@ body.dark .contact-container {
         font-size: 0.95rem;
     }
 }
+
 .education-section {
-  padding: 60px 20px;
-  text-align: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .section-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: var(--text-color);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 40px;
 }
 
 .education-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .edu-card {
-  background-color: rgba(210, 222, 250, 0.8);
-  color: #0a0a3b;
-  border-radius: 16px;
-  padding: 30px 25px;
-  max-width: 350px;
-  width: 90%;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  transition: transform 0.3s ease;
+    
+    color: var(--text-color);
+    border-radius: 14px;
+    padding: 25px 30px;
+    width: 320px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    /* ✨ Glass blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .edu-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
-.edu-card .fa-user-graduate {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: inherit;
+.edu-card i {
+    color: var(--subheading-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .edu-type {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-  text-decoration: underline;
+    color: var(--subheading-color);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.edu-card h4 {
+    color: var(--text-color);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.edu-card p {
+    color: var(--description-color);
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* Dark mode override */
+body.dark .edu-card {
+    background-color: rgba(30, 30, 30, 0.8);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
 }

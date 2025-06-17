@@ -24,12 +24,21 @@
     <div class="container contact-container">
         <h1 class="contact-heading">Get in Touch</h1>
         <form action="https://formsubmit.co/stefythomas4@gmail.com" method="POST" class="contact-form">
+
+            <!-- Hidden inputs to customize behavior -->
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="box" />
+            <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+            <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html" /> <!-- optional redirect -->
+
+            <!-- Visible fields -->
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </div>
+
 
     <!-- Floating Footer -->
     <div class="floating-footer">
