@@ -138,7 +138,7 @@ img {
     margin: auto;
     padding: 1.5rem;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 header {
@@ -203,7 +203,7 @@ header {
 
 .hero {
     text-align: center;
-    padding: 100px 20px 40px;
+    padding: 20px 20px 10px; /* reduced top and bottom padding */
 }
 
 .hero h1 {
@@ -225,8 +225,8 @@ header {
     /* nearly full width on larger screens */
     max-width: 1000px;
     /* bigger max size */
-    margin: 80px auto;
-    padding: 80px 60px;
+    margin: 90px auto;
+    padding: 90px 70px;
     /* more space inside */
     border: 2px dashed #71a8ff;
     border-radius: 10px;
@@ -299,15 +299,21 @@ header {
 
 @media (max-width: 600px) {
     .name-frame {
-        padding: 30px 15px;
+        padding: 10px 15px;
+        margin: 10px auto;
         width: 90%;
         transform: rotate(-2deg);
     }
 
-    #typing-text {
+    .name-frame #typing-text {
         font-size: 1.8rem;
         line-height: 2.2rem;
         white-space: normal;
+        overflow: visible;
+        border-right: none;
+        /* optional: remove cursor on mobile */
+        animation: none;
+        /* optional: stop cursor blink on mobile */
     }
 
     .subheading {
@@ -373,7 +379,7 @@ footer {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(30, 30, 30, 0.95);
+    background: rgba(28, 32, 63, 0.95);
     border-radius: 40px;
     padding: 10px 20px;
     display: flex;
@@ -394,7 +400,7 @@ footer {
 
 .floating-footer a:hover,
 .floating-footer button:hover {
-    color: #00d8ff;
+    color: #f6fcc0;
 }
 
 .floating-footer button:focus {
@@ -874,37 +880,6 @@ body.dark .contact-container {
     }
 }
 
-/* Floating Footer */
-.floating-footer {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #1f1f1f;
-    border-radius: 30px;
-    padding: 10px 20px;
-    display: flex;
-    gap: 20px;
-    z-index: 100;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.floating-footer a,
-.floating-footer button {
-    color: white;
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.footer {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 0.9rem;
-    padding-bottom: 40px;
-    color: var(--text-color);
-}
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -968,7 +943,7 @@ body.dark .contact-container {
 }
 
 .edu-card {
-    
+
     color: var(--text-color);
     border-radius: 14px;
     padding: 25px 30px;
