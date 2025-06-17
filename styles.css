@@ -365,7 +365,7 @@ footer {
 
 .socials a {
     margin: 0 0.5rem;
-    color: #00d8ff;
+    color: #2f6ce6;
     text-decoration: none;
     font-weight: 500;
 }
@@ -379,7 +379,7 @@ footer {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(28, 32, 63, 0.95);
+    background: rgba(25, 32, 83, 0.95);
     border-radius: 40px;
     padding: 10px 20px;
     display: flex;
@@ -393,14 +393,14 @@ footer {
 .floating-footer button {
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(250, 246, 227);
     font-size: 1.3rem;
     cursor: pointer;
 }
 
 .floating-footer a:hover,
 .floating-footer button:hover {
-    color: #f6fcc0;
+    color: #f5f6ed;
 }
 
 .floating-footer button:focus {
@@ -992,4 +992,45 @@ body.dark .contact-container {
 body.dark .edu-card {
     background-color: rgba(30, 30, 30, 0.8);
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  text-align: left;
+  max-width: 260px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pronouns {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #888;
+}
+
+.about-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.about-card i {
+  margin-right: 8px;
+  color: #666;
 }
