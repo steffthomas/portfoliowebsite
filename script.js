@@ -21,7 +21,7 @@ toggleBtns.forEach(btn => {
   });
 });
 
-const text = "Hi, I'm Stefy Thomas ";
+const text = "Hi, I'm Stefy ";
 let index = 0;
 
 function typeText() {
